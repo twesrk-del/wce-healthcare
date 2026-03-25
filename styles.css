@@ -1,0 +1,55 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  background-color: #F8F9FA;
+  padding: 20px;
+  text-align: center;
+  color: #6C757D;
+  font-size: 2em;
+}
+
+.button {
+  background-color: #3E8E41;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-color: #5CB85C;
+}
+
+.card {
+  background-color: #FFFFFF;
+  border: 1px solid #CED4DA;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .header {
+    font-size: 1.5em;
+  }
+  .button {
+    width: 100%;
+  }
+}
