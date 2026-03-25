@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Joke Generator</title>
+    <link rel="stylesheet" href="joke-styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>😂 Random Joke Generator 😂</h1>
+            <p>Get a laugh with random jokes from the internet!</p>
+        </header>
+
+        <main class="main-content">
+            <div class="joke-card" id="jokeCard">
+                <div class="joke-loading">
+                    <p>Click the button below to get a joke!</p>
+                </div>
+            </div>
+
+            <div class="controls">
+                <button id="getJokeBtn" class="btn btn-primary">Get a Joke 😄</button>
+                <button id="shareBtn" class="btn btn-secondary" disabled>Share 📤</button>
+            </div>
+
+            <div class="options">
+                <label>
+                    <input type="checkbox" id="safeModeToggle" checked>
+                    Safe Mode (No explicit jokes)
+                </label>
+            </div>
+
+            <div id="loadingSpinner" class="spinner hidden"></div>
+            <div id="errorMessage" class="error-message hidden"></div>
+        </main>
+
+        <footer class="footer">
+            <p>Powered by <a href="https://jokeapi.dev/" target="_blank">JokeAPI</a></p>
+        </footer>
+    </div>
+
+    <script src="joke-script.js"></script>
+</body>
+</html>
