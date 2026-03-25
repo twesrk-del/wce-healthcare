@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WCE Healthcare Claim Status Checker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>WCE Healthcare Claim Status Checker</h1>
+    </header>
+    <main>
+        <div class="panel employee-panel">
+            <h2>Employee Panel</h2>
+            <form id="employee-claim-form">
+                <label for="employeeId">Employee ID:</label>
+                <input type="text" id="employeeId" name="employeeId" required>
+                <button type="submit">Check Status</button>
+            </form>
+            <div id="employee-status"></div>
+        </div>
+        <div class="panel admin-panel">
+            <h2>Admin Panel</h2>
+            <form id="admin-claim-form">
+                <label for="adminId">Admin ID:</label>
+                <input type="text" id="adminId" name="adminId" required>
+                <button type="submit">Check Status</button>
+            </form>
+            <div id="admin-status"></div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2026 WCE Healthcare</p>
+    </footer>
+</body>
+</html>
